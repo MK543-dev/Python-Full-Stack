@@ -20,7 +20,6 @@
 16. [Advanced SQL](#programming-with-sql)
 17. [AI/ML](#aiml)
 
-[Original source notes](https://github.com/user-attachments/files/32923621/Python.1.md)
 
 ---
 
@@ -18812,9 +18811,3 @@ select * from account;
 commit;
 rollback;
 ```
-
----
-
-## AI/ML
-
-Artificial intelligence (AI) is the broad field of building systems that perform tasks associated with human intelligence. Machine learning (ML) is a part of AI in which models learn patterns from data. This repository currently contains no AI/ML examples or Flask or MongoDB lessons beyond the brief overview above.

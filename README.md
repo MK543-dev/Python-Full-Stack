@@ -2105,7 +2105,7 @@ print("odd") if a%2 else print("even")
 **4. check given number is perfect square or not:**
 
 ```python
-"""check given number is perfect sqaure or not
+"""check given number is perfect square or not
 """
 a=int(input("a:"))
 res=((a)**(0.5))
@@ -2844,7 +2844,7 @@ if age>21:
     elif age>30 and age<=40:
         print("right age, consult exprets!")
     elif age>40 and age<=50:
-        print("you already in Heaven, pleae continue!")
+        print("you already in Heaven, please continue!")
     elif age>50 and age<=60:
         print("you already ready to hit bucket!")
     else:
@@ -5736,12 +5736,12 @@ d1={}
 #make the empty dictionary
 for i in l1:
     d1[i]=0
-#calcuate the count of the each element
+#calculate the count of the each element
 for i in l1:
     d1[i]+=1
 freq=0
 ele=[]
-#find the maximum frequecy
+#find the maximum frequency
 for i in d1:
     if freq<d1[i]:
         freq=d1[i]
@@ -5767,7 +5767,7 @@ d1={}
 #make the empty dictionary
 for i in l1:
     d1[i]=0
-#calcuate the count of the each element
+#calculate the count of the each element
 for i in l1:
     d1[i]+=1
 for i in d1:
@@ -5787,7 +5787,7 @@ d1={}
 #make the empty dictionary
 for i in l1:
     d1[i]=0
-#calcuate the count of the each element
+#calculate the count of the each element
 for i in l1:
     d1[i]+=1
 for i in d1:
@@ -5810,7 +5810,7 @@ flag=False
 #make the empty dictionary
 for i in l1:
     d1[i]=0
-#calcuate the count of the each element
+#calculate the count of the each element
 for i in l1:
     d1[i]+=1
 for i in d1:
@@ -6861,7 +6861,7 @@ into lower case
 2) upper() ===\> this function will convert the given string characters into  
 uppercase
 
-3) swapcase()===\> this function will convert the lower case into uppercase and viceversa
+3) swapcase()===\> this function will convert the lower case into uppercase and vice versa
 
 4) title() ===\> this function will convert every word starting character  
 of the string into uppercase
@@ -6926,7 +6926,7 @@ s1=""
 print(s1.isupper())
 ```
 
-when we want to check the content type of the stirng, we will use the following functions:
+when we want to check the content type of the string, we will use the following functions:
 
 1) isdigit()
 
@@ -7946,13 +7946,13 @@ print(d1)
 function is a "collection or a block of statements", which is used to perform  a specified task  in the program
 
 in python functions are used to avoid the "code duplication", it means  
-when we create the any code as a function , then the code can be re-used  
+when we create the any code as a function , then the code can be reused
 as many times wherever we want inside the program by just calling the function
 
 in Python , with help of functions, we can able to divide the python program into "n" number of parts or modules as a functions
 
 in python, when we make any code as function , then the functions can be  
-re-used inside the another python, when we make the any code as a function, then functions can able export to another python file using a  
+reused inside the another python, when we make the any code as a function, then functions can able export to another python file using a
 concept called "module"
 
 **in Python, we will have two types of functions:**
@@ -8031,7 +8031,7 @@ def sum():#here no arguments in the function
   a=int(input("a:"))
   b=int(input("b:"))
   print(a+b)
-#calling the funciton sum()
+#calling the function sum()
 sum()
 ```
 
@@ -10292,7 +10292,7 @@ same name, python will uses "LEGB" rule, where LEGB is for "Scope
 Resolution Order"
 
 L==\>Local   (Rank-1)  
-E===\> Enclosed (Rank-2 ,check it's outer funcitons)  
+E===\> Enclosed (Rank-2 ,check it's outer functions)
 G===\> Global (Rank-3)  
 B===\> Built-in (Rank-4)
 
@@ -10665,7 +10665,7 @@ print(globals())
 **Module:**
 
 Module means "python file"  
-in Python, when we create a file with data and functions, can be re-used  
+in Python, when we create a file with data and functions, can be reused
 in another python file  with help of module  
 Modules will allow the "re-useability of the code of one file in another file"  
 when we want to create the module in python we will use the following
@@ -11266,7 +11266,7 @@ class Sample: #class name
 print(Sample.a,Sample.b,Sample.c)
 ```
 
-"""Acess the class data using object of the class"""
+"""Access the class data using object of the class"""
 
 ```python
 s1=Sample() #here s1 is object of the class
@@ -11344,10 +11344,10 @@ when we want to create the instance data, to create instance data, we will use "
 ```python
 class Sample: #class name:Sample
    def __init__(self):
-       print("This is default constrcutor from Sample!")
+       print("This is default constructor from Sample!")
 class Sample2: #class name:Sample2
     def __init__(self):
-        print("This is defautl constrcutor from Sample2!")
+        print("This is default constructor from Sample2!")
 s1=Sample()
 s2=Sample2()
 ```
@@ -11415,7 +11415,7 @@ print(getattr(s1,"c"))
 
 ```python
 class Sample:
-   #constrcutor
+   #constructor
    def __init__(self):
        """instance data"""
        self.a=10
@@ -11508,9 +11508,9 @@ in python,
 
 **we can able to create the instance data in ways:**
 
-1) we can create the instance data using constrcutor  inside the class  
+1) we can create the instance data using constructor  inside the class
 2) we can create the instance data using "setattr()" outside the class,  
-wit help of "object name"  
+with help of "object name"
 3)we can create the instance data outside the class using object name  
 directly
 
@@ -11518,11 +11518,11 @@ directly
 
 ```python
 class Sample:
-    #create the instance data using constrcutor
+    #create the instance data using constructor
     def __init__(self):
         self.x,self.y=1,2
 s1=Sample()
-#create the new instance data using object outisde the class
+#create the new instance data using object outside the class
 s1.a=100
 s1.b=200
 s1.c=300
@@ -12288,7 +12288,7 @@ in python, when we are working with inheritance, python will use a concept
 called "MRO"
 
 MRO stands for "Method Resolution Order" , when we are working with  
-Multiple inheritance , the two ore more super classes may have the data  
+Multiple inheritance , the two or more super classes may have the data
 with similar name, when we try to access the data using sub class object ,  
 then sub class object will access the data using "MRO" in Python
 
@@ -12632,7 +12632,7 @@ s2.display()
 
 ```python
 class Sample:
-   #constrcutor
+   #constructor
    def __init__(self):
        #private instance data
        self.__a=10
@@ -12919,17 +12919,13 @@ print(s1.a,s1.b,s1.c)
 
 **in general, polymorphism is two types:**
 
-**1) static polymorphism or compile-time polymorphism**
+**1) Traditional signature-based method overloading**
 
-this polymorphism will exhibited at the time of the compile-time, this  
-not  available in Python  
-example: method overloading
+Python does not select among multiple method definitions based only on their parameter signatures. A later definition with the same name replaces an earlier one. Similar behavior can be designed with default arguments, variable-length arguments, or dispatch tools.
 
-**2) run-time polymorphism or Dynamic Polymorphism**
+**2) Run-time polymorphism**
 
-this polymorphism will exhibited at the time of the run-time, this  
-only available in Python  
-example:  Operator overloading , Method Overriding
+Python supports run-time polymorphism, including operator overloading and method overriding.
 
 **how many ways, we can implement the Polymorphism in Python**
 
@@ -12946,7 +12942,7 @@ class Duck:
         print("Quack Quack!")
 class Snake:
     def  sound(self):
-        print("Buss buss!")
+        print("Hiss hiss!")
 class Frog:
     def  sound(self):
         print("beck beck!")
@@ -13159,22 +13155,22 @@ print(s1())
 
 ```python
 class Sample:
-    #constrcutor
+    #constructor
     def __init__(self,a,b,c):
         self.a,self.b,self.c=a,b,c
-    #destrcutor (remove the object and it's resources)
+    #destructor (remove the object and its resources)
     def __del__(self):
         print("the object is removed!")
 s1=Sample(1,2,3)
 ```
 
-del s1 #it will call the destrcutor (\_\_del\_\_)
+del s1 #it will call the destructor (\_\_del\_\_)
 
 **example:**
 
 ```python
 class Sample:
-    #constrcutor
+    #constructor
     def __init__(self):
         self.mylist=[10,20,30,40]
     #to access the data
@@ -14069,7 +14065,7 @@ Aggregation is also called as "Has-a" relation
 Aggregation makes a class can be part of the another class, then the class  
 what contained by another class, the contained can exit independently ,  
 this relation is a "Weak relation"  
-Aggregation can allow "one class can be part of the another class", contained class can exists indepently
+Aggregation can allow "one class can be part of the another class", contained class can exists independently
 
 **example:**
 
@@ -14110,7 +14106,7 @@ class Engine:
     def start(self):
         print("Engine is started!")
     def stop(self):
-        print("Engine is stoped!")
+        print("Engine is stopped!")
 class Car:
     def __init__(self):
         self.e1=Engine()
@@ -14336,7 +14332,7 @@ except ValueError as e:
     print(e)
 except TypeError as e:
     """this except block will execute only
-    exception is realted to type Error"""
+    exception is related to type Error"""
     print("from Type Error block")
     print(e)
 except:
@@ -14378,7 +14374,7 @@ try:
 except KeyError as e:
     print("Key Error:",end=" ")
     print(e,end=" ")
-    print("is not avaliable in the Dictionary!")
+    print("is not available in the Dictionary!")
 except:
     print("please check the logic once!")
 ```
@@ -14510,7 +14506,7 @@ try:
 except FileNotFoundError as e:
     print(e)
 except:
-    print("plese check the logic")
+    print("please check the logic")
 ```
 
 **12.StopIteration:**
@@ -14528,9 +14524,9 @@ try:
     print(next(i1))
     print(next(i1))
 except StopIteration:
-    print("No data is avaliable in the Iterator")
+    print("No data is available in the Iterator")
 except:
-    print("plese check the logic")
+    print("please check the logic")
 ```
 
 **2) User-defined exceptions**
@@ -15395,7 +15391,7 @@ t3=Thread3()
 t1.start()
 t2.start()
 t3.start()
-#notify the main thread execute after all threads excution
+#notify the main thread execute after all threads execution
 t1.join()
 t2.join()
 t3.join()
@@ -16788,7 +16784,7 @@ from the table, unique row wise
 ```
 
 syntax:  
-select distict col1, col2, col3,.......coln from table\_name;
+select distinct col1, col2, col3,.......coln from table\_name;
 
 **example:**
 
@@ -17210,7 +17206,7 @@ select * from sample124;
 syntax:  
 alter table table\_name add column1\_name type constraint,  
 add column2\_name type constraint,........................  
-add columnn\_name type constraint;
+add column\_name type constraint;
 
 when we are working with "alter"  for adding new column, the new column  
 always add at end of the table

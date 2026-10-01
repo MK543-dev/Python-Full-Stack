@@ -1,97 +1,40 @@
-[Python (1).md](https://github.com/user-attachments/files/32923621/Python.1.md)
 # Python Full Stack with AI/ML Notes
 
 ## Table of Contents
 
-1. [Python Full Stack Overview](#python-full-stack-overview)
-2. [Types of Applications](#types-of-applications)
-3. [Introduction to Python](#introduction-to-python)
-4. [Setting Up Python](#setting-up-python)
-5. [Python Character Set](#python-character-set)
-6. [Python Keywords](#python-keywords)
-7. [Python Comments](#python-comments)
-8. [Python Identifiers](#python-identifiers)
-9. [Python Data Types](#python-data-types)
-10. [Input and Output Statements](#input-and-output-statements)
-11. [Python Variables](#python-variables)
-12. [Python Operators](#python-operators)
-13. [Practice Programs on Operators --> codes](#practice-programs-on-operators)
-14. [Overloaded Operators](#overloaded-operators)
-15. [Conditional Statements](#conditional-statements)
-16. [Looping Statements](#looping-statements)
-17. [Programs on Strings and Lists (Without Built-in Functions) --> codes](#programs-on-strings-and-lists-without-built-in-functions)
-18. [Programs on Numbers --> codes](#programs-on-numbers)
-19. [Programs on Patterns --> codes](#programs-on-patterns)
-20. [Un-conditional Statements](#un-conditional-statements)
-21. [String Formatting](#string-formatting)
-22. [Data Structures](#data-structures)
-23. [Indexing and Slicing](#indexing-and-slicing)
-24. [Programs on Lists and Strings --> codes](#programs-on-lists-and-strings)
-25. [Searching and Sorting](#searching-and-sorting)
-26. [Comprehensions](#comprehensions)
-27. [Working with Lists](#working-with-lists)
-28. [Working with Tuples](#working-with-tuples)
-29. [Working with Strings](#working-with-strings)
-30. [Working with Sets](#working-with-sets)
-31. [Working with Dictionaries](#working-with-dictionaries)
-32. [Python Functions](#python-functions)
-33. [Recursion](#recursion)
-34. [Monkey Patching](#monkey-patching)
-35. [Decorators](#decorators)
-36. [Iterators and Generators](#iterators-and-generators)
-37. [Annotations and Doc Strings](#annotations-and-doc-strings)
-38. [Packing and Unpacking](#packing-and-unpacking)
-39. [Python Built-in Functions](#python-built-in-functions)
-40. [Scope](#scope)
-41. [Modules and Packages](#modules-and-packages)
-42. [OOPS: Classes and Objects](#oops-classes-and-objects)
-43. [Constructors](#constructors)
-44. [Built-in Classes](#built-in-classes)
-45. [Inheritance](#inheritance)
-46. [Data Abstraction](#data-abstraction)
-47. [Data Encapsulation](#data-encapsulation)
-48. [Abstract Classes](#abstract-classes)
-49. [Polymorphism](#polymorphism)
-50. [Singleton Class](#singleton-class)
-51. [Meta Classes](#meta-classes)
-52. [Data Classes](#data-classes)
-53. [OOPS Relationships](#oops-relationships)
-54. [Exception Handling](#exception-handling)
-55. [Asynchronous Functions](#asynchronous-functions)
-56. [Multi-threading](#multi-threading)
-57. [Relational Databases](#relational-databases)
-58. [Working with MySQL](#working-with-mysql)
-59. [Tables and Constraints](#tables-and-constraints)
-60. [SQL Clauses](#sql-clauses)
-61. [Aggregate Functions, Group By and Having](#aggregate-functions-group-by-and-having)
-62. [MySQL Operators (Logical, IN, BETWEEN, LIKE)](#mysql-operators-logical-in-between-like)
-63. [Alter Command](#alter-command)
-64. [MySQL with Python](#mysql-with-python)
-65. [Null Values and Case Statement](#null-values-and-case-statement)
-66. [MySQL Built-in Functions](#mysql-built-in-functions)
-67. [Window Functions](#window-functions)
-68. [CTEs and Joins](#ctes-and-joins)
-69. [Programming with SQL](#programming-with-sql)
-70. [Stored Procedures, Functions and Triggers](#stored-procedures-functions-and-triggers)
-71. [Indexes](#indexes)
-72. [Transactions](#transactions)
-73. [AI/ML](#aiml)
+1. [Python full-stack overview](#python-full-stack-overview)
+2. [Types of applications](#types-of-applications)
+3. [Python fundamentals](#introduction-to-python)
+4. [Python data types](#python-data-types)
+5. [Input, output, variables, and operators](#input-and-output-statements)
+6. [Control flow](#conditional-statements)
+7. [Practice programs --> Codes](#practice-programs-on-operators)
+8. [Python data structures](#data-structures)
+9. [Searching and sorting](#searching-and-sorting)
+10. [Functions and functional tools](#python-functions)
+11. [Object-oriented programming](#object-oriented-programming-classes-and-objects)
+12. [Exceptions and concurrency](#exception-handling)
+13. [Relational databases and SQL](#relational-databases)
+14. [Working with MySQL](#working-with-mysql)
+15. [MySQL with Python --> Codes](#mysql-with-python)
+16. [Advanced SQL](#programming-with-sql)
+17. [AI/ML](#aiml)
+
+[Original source notes](https://github.com/user-attachments/files/32923621/Python.1.md)
 
 ---
 
 ## Python Full Stack Overview
 
-full stack is a "combination of front-end and back-end"
+Full-stack development combines the front end, back end, data storage, and deployment concerns of an application.
 
 full stack refers " front-end+ back-end+ databases+ deployment"
 
-**what is mean by Front-end:**
+**What is the front end?**
 
 front-end means "application user interface"
 
-application user interface makes the  "user can able to interact with
-
-application"
+The front end is the part of an application that users interact with.
 
 with help of python full stack, we are developing the following types
 
@@ -105,13 +48,13 @@ of applications:
 
 4)  distributed application
 
-when want to develop the application UI for the above applications,
+To build a user interface, developers commonly use:
 
 **we will use the following Tech.:**
 
 1)  HTML:
 
-html is a "markup language", which is uses "tags" to describe the
+HTML is a markup language that uses tags to describe the
 
 data
 
@@ -121,13 +64,13 @@ UI or application User Interface"
 
 **2) CSS:**
 
-css is a style sheet using this we can able to give the "Look and feel
+CSS is a style-sheet language used to control the look and feel
 
 for any application UI, which is made with HTML"
 
 **3)  JS:**
 
-java script is a "client-side scripting language"
+JavaScript is a programming language commonly used in the browser.
 
 java script is often called as "programming language for UI"
 
@@ -141,13 +84,9 @@ with  help JS, we can able to perform the following actions:
 
 **4) Bootstrap:**
 
-bootstrap is also called as "CSS framework"
+Bootstrap is a CSS framework
 
-using bootstrap, we can able to make the "Application UI" as
-
-Responsive (with this, we can able to open the application UI in
-
-any device)
+Bootstrap provides responsive layout tools that help interfaces adapt to different screen sizes.
 
 HTML  ===\> to design or create the structure the UI
 
@@ -163,7 +102,7 @@ React
 
 **what is mean by back-end:**
 
-back-end means "application server", which is used to process the
+The back end handles application logic and processes the
 
 any user request or action
 
@@ -185,9 +124,7 @@ in our course,  we are learning " Python" as back-end technology.
 
 **what is mean by database:**
 
-database in used in the application, to store the all application users
-
-data
+A database stores and organizes application data.
 
 **what is data?**
 
@@ -197,9 +134,7 @@ example:  image, audio, video, text, document,............
 
 what is information:
 
-information refers "processed data" " data which come from a
-
-process"
+Information is data interpreted in a useful context; the distinction depends on how the data is used.
 
 based how we store the data in the database or based on what
 
@@ -211,9 +146,7 @@ two types:
 
 in this database, we will store the data in the form  of "Table"
 
-any database store the data in the form of table, then the database is
-
-called as "Relational Database"
+Relational databases organize data in tables with defined relationships and constraints.
 
 Relation means " Table"
 
@@ -247,15 +180,11 @@ any database store the data other than table to store the data, then
 
 the database is called  "Non-relational database"
 
-in this database, we are never going to use any language called "SQL",
-
-this is also often called  "No-SQL database"
+Non-relational databases use data models other than the traditional relational table model. They are often called NoSQL databases; that name does not mean SQL can never be used alongside them.
 
 in our course , we are learning a database called "MongoDB", which
 
-uses "document" structure to store the data, where the document will
-
-have the data in the form of key and value pairs
+stores data as documents made up of field/value pairs. MongoDB is queried through its query API rather than standard SQL.
 
 full stack=  application UI + application Server + Database
 
@@ -269,9 +198,7 @@ Databases:  MySQL with SQL, MongoDB
 
 web frameworks:
 
-Flask   ===\> for small scale or any AI/ML applications
-
-Django ====\> to make any larger application
+Flask and Django are Python web frameworks. Either can be used for applications of different sizes; framework choice depends on the application and team needs.
 
 **API Frameworks:**
 
@@ -287,99 +214,19 @@ using python full stack, we can able to develop the following
 
 ## Types of Applications
 
-**1. stand-alone application or desktop application :**
+**1. Stand-alone or desktop applications** run primarily on a user's device. They may work offline, but they can also use the internet or communicate with servers. Examples include a calculator, camera, or text editor.
 
-when we say any application is "stand-alone application" or "desktop"
+**2. Web applications** are accessed over a network, commonly through a browser, and usually communicate with server-side software. They can also communicate with other services and servers. Examples include Gmail, Dropbox, and YouTube.
 
-application, the application never uses "internet" to access the
+**3. Enterprise applications** support the operations of an organization. They may be web, desktop, or mobile applications, and often integrate with other services through APIs. Examples include commerce, booking, and inventory systems.
 
-application  and  the application never uses "server" to run the
-
-application
-
-example:  calendar , camera, gallery, notepad.......................
-
-these applications we can develop in the very limited space in real time,
-
-because these application will never allow the  "sharing of data"
-
-**2. web application or internet application:**
-
-if we say any application is "Web or enterprise application" , then the
-
-application uses "internet" to access the application and server to
-
-run the application
-
-example:  gmail, dropbox, drive, youtube,.......................
-
-in this application, we can able to have the "data sharing", it means
-
-we can able to share the data from the one device to another device
-
-in real-time, almost all applications by default "web applications" ,
-
-in this applications, we can not able to have "Server to server"
-
-communication
-
-**3. Enterprise application:**
-
-every enterprise application by default "Web application", but not
-
-vice versa, this application also uses internet to access the application
-
-and server to run the application
-
-in this application, we can also have "server to server communication"
-
-example:   Amazon, book my show, blinkit,.................
-
-in real-time, in the enterprise application, the server can able to
-
-communicate with another server using "API"
-
-this server -to- server communication will done in the enterprise
-
-in the following ways:
-
-1)  native server communication
-
-2)  Third-party server communication
-
-**the major common issues with enterprise application:**
-
-1)   when the load is high, it un able to process
-
-2)  it can not scale the user limit
-
-3)  it can not reverse the operations back
-
-4) it maintain different databases for each server
-
-**4. Distributed application:**
-
-distributed application is can be  "Web or enterprise" application  it
-
-maintain the following:
-
-1)  Load balancing
-
-2)  auto scaling
-
-3)  Fault tolerance
-
-4)  De-centralized database
-
-5)  high performance
+**4. Distributed applications** run across multiple networked computers or services. Depending on their design, they may use load balancing, scaling, fault tolerance, and centralized or distributed data storage.
 
 ---
 
 ## Introduction to Python
 
-python is a "high-level, strongly typed, dynamic typed, object-oriented
-
-programming language"
+Python is a high-level, dynamically typed, general-purpose programming language that supports object-oriented and other programming styles.
 
 **why python high-level?**
 
@@ -421,17 +268,9 @@ to convert the code into binary
 
 **why python is strongly typed:**
 
-python is a strongly typed language, because, when we are performing
+Python is often described as strongly typed because it does not freely coerce unrelated values in operations such as `"2" + 2`. It does allow defined operations between different types, such as `3 + 2.5` and `"ha" * 3`.
 
-the operation on the operands(Data), the operands always need to
-
-same type, otherwise python will not allow the operation
-
-if any high-level language allow the operation on any type, then the
-
-language is called as "loosely typed language"
-
-example: javascript
+The phrase "loosely typed" is informal; languages differ in which implicit conversions they allow.
 
 **why python is dynamic typed?**
 
@@ -549,25 +388,15 @@ an intermediate code, this intermediate code is also called as "byte
 
 code"
 
-intermediate code is not a "python code or binary code"
+Bytecode is an implementation-specific binary representation of Python instructions; it is not portable machine code.
 
 the intermediate code file extension is ".pyc"
 
-3) once we got the "byte code", the byte code will taken by "PVM" and
+3) In CPython, the Python virtual machine executes the bytecode. It does not normally create a `sample.exe` file. Other Python implementations may use different execution strategies.
 
-this will generate the "Executable code"  (sample.exe)
+`sample.py` → Python implementation → bytecode (in CPython) → execution
 
-PVM is able to execute the byte code into executable code, using
-
-interpreter
-
-sample.py ===\> python compiler ===\> byte code ==\> PVM ==\>exe. code
-
-the byte code can able to execute on any platform , where the platform
-
-must have "PVM", where the byte code makes the "python as
-
-platform  independent" , but the PVM is always "platform dependent"
+Python code can run on different platforms when a compatible Python implementation and required dependencies are available.
 
 **python is a open source:**
 
@@ -575,15 +404,11 @@ when we say any software or system is open source, then the it's
 
 entire source code is available to everyone
 
-the entire python source code is available to all users, because of this
-
-we will have the following python flavours:
+CPython is open source. Python has multiple implementations, including:
 
 1)  Cpython
 
-the most commonly used  python flavour, and it is implemented in
-
-C and Python
+the reference implementation, primarily implemented in C
 
 2)  Jython
 
@@ -609,41 +434,9 @@ Python for Micro Controllers......................
 
 ## Setting Up Python
 
-when we want to work with python programming , we will use "IDLE"
+Download Python from [python.org](https://www.python.org/downloads/) and follow the installer instructions for your operating system. On Windows, select the option to add Python to `PATH` if you want to run `python` from a terminal.
 
-IDLE is a software and which is used to "Write, Run, Test and Debug
-
-any program"
-
-**the following popular IDLE's:**
-
-1)  Python IDLE  (this will come automatically, when install python)
-
-2) Spyder
-
-3)  Jupyter Note Book
-
-4)  Google Colab
-
-5)  Vs code editor
-
-6)  PyCharm
-
-first we need to download and  install the python
-
-**use the following url for download python:**
-
-https://www.python.org/downloads/
-
-after installing the python , we need to install the a frame work
-
-called " Anaconda Navigator"
-
-**use the following URL to download Anaconda Navigator:**
-
-https://www.anaconda.com/download
-
-**Python language fundamentals :**
+Python includes IDLE, a basic editor and interactive shell. Other common tools include VS Code and PyCharm (code editors/IDEs), Jupyter Notebook and Google Colab (notebook environments), and Spyder (an IDE often used for scientific computing). Anaconda is an optional Python distribution that bundles environment-management tools and packages; it is not required for a standard Python installation.
 
 ---
 
@@ -683,11 +476,21 @@ the python program
 
 **the following are important keywords of the python language:**
 
+**Wrong Code** (incomplete Python syntax):
+
 ```python
 for operators:
 ```
 
-for logical operators:   or, and , not
+A `for` statement needs a target and an iterable. Here is a valid example that lists common arithmetic operators:
+
+```python
+operators = ("+", "-", "*", "/", "//", "%", "**")
+for operator in operators:
+    print(operator)
+```
+
+Logical operators: `or`, `and`, `not`.
 
 for membership operators:  in
 
@@ -768,13 +571,9 @@ when we store the doc-string inside the variable, then the string act as
 
 "multi-line string"
 
-when we write the doc-string directly inside the program, then the
+A string literal that is not assigned or used as a docstring is still a string expression, not a comment. Use `#` for comments. A module, class, or function docstring is a string literal placed first in that object’s body.
 
-string is act as "multi-line comment"
-
-writing the comments, will not zero effect the code execution  and
-
-comments will be ignored by compiler while translation
+Comments do not affect program execution; Python ignores them when parsing the code.
 
 ---
 
@@ -878,9 +677,7 @@ example:   1.234,-4.567,8.9012,.............
 
 **3) complex numbers**
 
-python will support the complex numbers
-
-in python, the complex number is in the form of "a+bj" or "a+bJ"
+Python supports complex numbers, written in forms such as `3 + 4j`.
 
 in the complex number , where a refers "Real number"  and "b"
 
@@ -894,9 +691,7 @@ represents either "j or J", no other character is  allowed
 
 **1) binary number:**
 
-in python , we can able to represent the binary number with the prefix
-
-called "ob or 0B"
+Integer literals can use the binary prefix `0b` or `0B` (for example, `0b10101`).
 
 example:  0b10101, oB110011
 
@@ -904,33 +699,23 @@ example:  0b10101, oB110011
 
 in python , we can able to represent the octal number with the prefix
 
-called "oo or 0O"
+called `0o` or `0O`
 
 example:  0o157, 0O1777
 
-**3) decimal number:**
+**3) Decimal numbers:**
 
-in python, no any special representation for "Decimal number", because
-
-every integer number, in python by default "Decimal" number
+Python's built-in `int` type stores arbitrary-precision integers. For base-10 decimal arithmetic with decimal fractions, use `decimal.Decimal` from the `decimal` module.
 
 **4) hexa-decimal number :**
 
 in python , we can able to represent the hexe-decimal number with the
 
-prefix called "ox or 0X"
+prefix `0x` or `0X`
 
-example: oxab123, 0Xabc1234
+example: `0xab123`, `0Xabc1234`
 
-the above all numbers are also called as "computer numbers"
-
-for machine, we will use "binary"
-
-for humans, we will use "decimal"
-
-for memory addressing and system purpose, we will use "octal and
-
-hexa-decimal" number
+These prefixes let integer literals be written in different bases: binary (base 2), octal (base 8), decimal (base 10), and hexadecimal (base 16).
 
 **2.Boolean type:**
 
@@ -951,21 +736,24 @@ False ===\> 0
 **example:**
 
 ```python
-print(10+True)   ===> 11
-
-print(True+True)  ===>2
-
-print(True*False+10)  ==>10
+print(10 + True)       # 11
+print(True + True)     # 2
+print(True * False + 10)  # 10
 ```
 
 **3. text type or character type:**
 
 any text data in python, we are calling as "string"
 
-any string data can be represented in quotes (' ' or " " or """ """ or '''
+Strings can use single or double quotes. Triple-quoted strings can span multiple lines:
 
 ```python
-''')
+single_quoted = 'hello'
+double_quoted = "hello"
+multiline_single = '''hello
+world'''
+multiline_double = """hello
+world"""
 ```
 
 **in python, we will have two types of strings:**
@@ -1150,11 +938,7 @@ in python range() function , we can able to apply the "indexing and
 
 slicing"
 
-in python range() function , can not allow the duplicate values or
-
-range() function can not  generate the duplicate values, always
-
-generate the unique values
+A `range` uses a nonzero step, so its generated integer values do not repeat.
 
 **in python, range() function can be created using following syntax:**
 
@@ -1264,13 +1048,9 @@ set type is used to "store the group of values, but set type always can
 
 store only unique values"
 
-in python, set type  is called as "non-sequence type" , because on
+A set is a non-sequence type, so it does not support indexing or slicing.
 
-set type we can able to apply the "indexing and slicing"
-
-in python , set type is also called as "un-ordered collection" , because
-
-sets does not  store the  data in the given order always
+A set is an unordered collection. Do not rely on its iteration order.
 
 **in python, we will have two types of sets:**
 
@@ -1298,15 +1078,9 @@ when we want to create the frozen set in python, we will use a function
 
 called "frozenset()"
 
-in python, both frozen set and set , never allow the duplicates, indexing
+in python, Both `set` and `frozenset` contain unique elements and do not support indexing or slicing.
 
-, slicing
-
-in python, only sets can allow the operations like insert, update, delete ,
-
-union, intersection, difference, symmetric difference,..........., these all
-
-are we can not apply on "frozen set"
+A `set` is mutable; a `frozenset` is immutable. Both support set operations such as union, intersection, difference, and symmetric difference.
 
 **map type:**
 
@@ -1314,7 +1088,7 @@ when we want to store the data as a key and value pair, in python we
 
 will use "map type"
 
-in python, "dictionary" is represents "map" data type
+A Python dictionary is a mapping type that stores key/value pairs.
 
 in dictionary , the data is in the form "key and value" pairs
 
@@ -1322,9 +1096,7 @@ in dictionary,  we can able to have any number of keys, but keys never
 
 be  duplicate , but values can be duplicate
 
-in dictionary, we can have any type of data as " value", but key can
-
-either numeric  or character type
+Dictionary values can be objects of any type. Keys must be hashable, so lists and dictionaries cannot be used as keys.
 
 in python, when we want to create the dictionary, we will use the
 
@@ -1350,9 +1122,7 @@ in python, dictionary is non-sequence type( it means , no indexing and
 
 slicing)
 
-in python, dictionary , keys are act like a "indexes", to access the data
-
-or values of the dictionary
+Dictionary keys are used to look up their associated values. Keys must be hashable; common examples include strings, numbers, and tuples of hashable values.
 
 **binary type:**
 
@@ -2418,7 +2188,7 @@ end: 20
 
 **code:**
 
-```sql
+```python
 start=int(input("start:"))
 end=int(input("end:"))
 start=start if start%2==0 else start+1
@@ -2491,12 +2261,22 @@ s1="abc"
 s2="bca"
 ```
 
-**code:**
+**Wrong Code:**
 
 ```python
 s1=input("string1:")
 s2=input("String2:")
 print("anagram") if {*s1}=={*s2} else print("not anagram")
+```
+
+This compares only the distinct characters, so it can incorrectly treat strings with different character counts as anagrams (for example, `"aab"` and `"abb"`).
+
+**Corrected Code:**
+
+```python
+s1=input("string1:")
+s2=input("String2:")
+print("anagram" if sorted(s1)==sorted(s2) else "not anagram")
 ```
 
 14. print the count of the how many even numbers in the given  range,
@@ -2515,7 +2295,7 @@ end: 15
 
 **code:**
 
-```sql
+```python
 start=int(input("start:"))
 end=int(input("end:"))
 start=start if start%2==0 else start+1
@@ -3566,7 +3346,7 @@ end: 30
 
 **code:**
 
-```sql
+```python
 start=int(input("start:"))
 end=int(input("end:"))
 for i in range(start,end+1):
@@ -4072,7 +3852,7 @@ end: 20
 
 **code:**
 
-```sql
+```python
 start=int(input("start:"))
 end=int(input("end:"))
 for num in range(start,end+1):
@@ -4958,7 +4738,7 @@ for rownum in range(1,rows+1):
 
 ---
 
-## Un-conditional Statements
+## Unconditional Statements
 
 **in python, we will have the following un-conditional statements:**
 
@@ -6320,7 +6100,7 @@ length=0
 
 for \_ in l1:length+=1
 
-```sql
+```python
 start=0
 end=length-1
 while start<=end:
@@ -7546,60 +7326,37 @@ s1="hello world"
 print(s1.find(""))
 ```
 
-anagram means "both strings must have same kind of characters or letters, where letters frequency also must be same, where given strings  
-length must be same, order of letters does not important in the given  
-two strings"
+Anagrams contain the same characters with the same frequencies; their order may differ.
 
-**example:**
+**Wrong Code:**
 
 ```python
 s1=input("s1:")
 s2=input("s2:")
-l1=0
-l2=0
+print("anagram" if set(s1)==set(s2) else "not anagram")
 ```
 
-for \_ in s1:l1+=1  
-for \_ in s2:l2+=1
+Comparing sets ignores repeated characters, so it can report `"aab"` and `"abb"` as anagrams.
+
+**Corrected Code:**
 
 ```python
-s1={*s1}
-s2={*s2}
-l3,l4=0,0
+s1=input("s1:")
+s2=input("s2:")
+print("anagram" if sorted(s1)==sorted(s2) else "not anagram")
 ```
 
-for \_ in s1:l3+=1  
-for \_ in s2:l4+=1
+The following version counts each character explicitly and also handles repeated characters:
 
 ```python
-if l1==l3 and l2==l4:
-    print("anagram") if s1==s2 else print("not anagram")
-else:
-    print("not anagram")
-
-or
 s1=input("s1:")
 s2=input("s2:")
 d1,d2={},{}
-l1=0
-l2=0
-```
-
-for \_ in s1:l1+=1  
-for \_ in s2:l2+=1
-
-```python
-for i in s1:
-    if i in d1:
-        d1[i]+=1
-    else:
-        d1[i]=1
-for i in s2:
-    if i in d2:
-        d2[i]+=1
-    else:
-        d2[i]=1
-print("anagram") if d1==d2 else print("not anagram")
+for character in s1:
+    d1[character]=d1.get(character,0)+1
+for character in s2:
+    d2[character]=d2.get(character,0)+1
+print("anagram" if d1==d2 else "not anagram")
 ```
 
 ---
@@ -7949,8 +7706,7 @@ dictionary
 5) sorted()  
 this function will give the all keys in the either in ascending order or  
 descending order  
-in python dictionary , dictionary key can be "number or string" only  
-in python dictionary , value can be anything  
+Dictionary keys can be any hashable object (commonly numbers, strings, and tuples); values can be objects of any type.
 in python dictionary , when we want to access the any value from the  
 dictionary , we will use the following syntax:  
 dictionary\_name\[key\_name\]  
@@ -9755,7 +9511,7 @@ def function_name(arg1:type, arg2:type arg3:type,.........argn:type)->type:
 print(display.__annotations__)
 ```
 
-**example:**
+**Wrong Code:**
 
 ```python
 def display(a:int,b:int,c:int)->int:
@@ -9763,15 +9519,21 @@ def display(a:int,b:int,c:int)->int:
     print(a+b+c)
 print(display.__annotations__)
 display(10,20,30)
-"""
-{'a': <class 'int'>, 'b': <class 'int'>,
- 'c': <class 'int'>,
- 'return': <class 'int'>}
-"""
 ```
 
-annotations will give the "type hinting" of the arguments of the function  
-and return value type of the function
+The `-> int` annotation suggests an integer return value, but this function returns `None` because it only prints.
+
+**Corrected Code:**
+
+```python
+def display(a:int,b:int,c:int)->int:
+    return a+b+c
+
+print(display(10,20,30))
+print(display.__annotations__)
+```
+
+Annotations provide metadata commonly used as type hints. Python does not enforce them at runtime.
 
 **doc string of the function:**
 
@@ -10135,7 +9897,7 @@ print(*filter(lambda x: x not in vowels,string),sep="")
 
 **write a python program to print the prime numbers in the given range:**
 
-```sql
+```python
 start=1
 end=20
 ```
@@ -10150,7 +9912,7 @@ print(*filter(lambda x:len([*filter(lambda y:x%y==0,range(1,x+1))])==2, range(st
 
 **example:**
 
-```sql
+```python
 start=int(input("start:"))
 end=int(input("end:"))
 ```
@@ -11188,7 +10950,7 @@ def display2():
 
 ---
 
-## OOPS: Classes and Objects
+## Object-Oriented Programming: Classes and Objects
 
 **classes and objects:**
 
@@ -13697,7 +13459,7 @@ the class
 
 ---
 
-## Meta Classes
+## Metaclasses
 
 Meta class is a class , which is used to create the another class  
 using meta classes , we can able to give the default behaviour and data  
@@ -14261,7 +14023,7 @@ print(Sample.__annotations__)
 
 ---
 
-## OOPS Relationships
+## Object-Oriented Relationships
 
 **Association:**
 
@@ -14443,31 +14205,27 @@ raise is used by the programmer or developer  to raise any built-in exception or
 finally is used to execute any code in the program always when there is  
 exception or when there is no exception
 
-5.assert  
-assert is used to check the every line of the program or when we want  
-to de-bug the every line of the program, we are going to "assert"
+5. `assert`
+`assert` checks that a condition is true and raises `AssertionError` if it is false. Use it for internal debugging assumptions, not for input validation or required runtime checks, because optimized Python can remove assertions.
 
-**exception handling code template:**
+**Exception-handling template:**
+
+This is a structure, not a complete program. Replace the placeholders with valid statements and handle specific exception types where possible.
 
 ```python
 try:
-     #here we will write the code which may cause the exception or
-     which may give the exception
-except exception_name1:#optional
-except exception_name2:
-except exception_name3:
-.
-.
-.
-except:
-else:#optional
-      #here we will write the code, this code will execute only when there
-      is no exception in the try
-finally:#optional
-      #here we will write the code, this code will execute when there is
+    # Code that may raise an exception
+    ...
+except ValueError as error:
+    # Handle this specific exception
+    print(error)
+else:
+    # Runs only if the try block completes without an exception
+    print("Success")
+finally:
+    # Runs whether or not an exception occurred
+    print("Finished")
 ```
-
-exception or when there is no exception
 
 **example:**
 
@@ -15215,72 +14973,103 @@ execution
 
 Event Loop is able to "process and completes asynchronous functions which are created inside the  python program"
 
-any python program can have exactly one Event Loop, when the program  
-executes, if the program consists "Asynchronous functions" then PVM  
-will create the Event loop, keep the all Asynchronous functions inside the  
-Event loop
+An application can create event loops over its lifetime, but only one event loop can run in a thread at a time. `asyncio.run()` is the standard entry point for running a top-level coroutine.
 
-**example:**
+**Wrong Code:**
 
 ```python
 import asyncio
 import nest_asyncio
-import time as t
-start=t.perf_counter()
+
 nest_asyncio.apply()
-"""
-this will allow the exisiting
-even loop can use by all asynchronous
-functions
-"""
+
 async def f1():
     print("this is from f1")
+
 async def f2():
-    print("this is from f1")
+    print("this is from f2")
+
 async def f3():
-    print("this is from f1")
+    print("this is from f3")
+
 async def main():
-    asyncio.gather(f1(),f2(),f3())
-def run():
-    loop=asyncio.get_event_loop()
-    loop.run_until_complete(main())
-run()
-end=t.perf_counter()
-print(f'total_time:{end-start}')
+    asyncio.gather(f1(), f2(), f3())
+
+loop=asyncio.get_event_loop()
+loop.run_until_complete(main())
 ```
 
-above code for "spyder", to avoid new event loop, use the exisitin  
-event loop
+`asyncio.gather()` returns an awaitable. Without `await`, the child coroutines do not run as intended. `nest_asyncio` is also unnecessary for a normal script.
 
-**example:**
+**Corrected Code:**
 
 ```python
 import asyncio
-import nest_asyncio
-import time as t
-start=t.perf_counter()
-flag=False
+
 async def f1():
     print("this is from f1")
+
 async def f2():
-    print("this is from f1")
+    print("this is from f2")
+
 async def f3():
-    print("this is from f1")
+    print("this is from f3")
+
 async def main():
-    asyncio.gather(f1(),f2(),f3())
+    await asyncio.gather(f1(), f2(), f3())
+
 asyncio.run(main())
-end=t.perf_counter()
-print(f'total_time:{end-start}')
 ```
 
-when we want to work with following, we will use asynchronous functions:  
-when we are working API's calls  
-when we are working Database queries  
-when we are network operations
+In a notebook or IDE that already runs an event loop, use its supported top-level `await` workflow instead of starting a second loop.
+
+**Wrong Code:**
+
+```python
+import asyncio
+
+async def f1():
+    print("this is from f1")
+
+async def f2():
+    print("this is from f2")
+
+async def f3():
+    print("this is from f3")
+
+async def main():
+    asyncio.gather(f1(), f2(), f3())
+
+asyncio.run(main())
+```
+
+`main()` returns before the `gather()` awaitable is awaited, so the child coroutines may never run.
+
+**Corrected Code:**
+
+```python
+import asyncio
+
+async def f1():
+    print("this is from f1")
+
+async def f2():
+    print("this is from f2")
+
+async def f3():
+    print("this is from f3")
+
+async def main():
+    await asyncio.gather(f1(), f2(), f3())
+
+asyncio.run(main())
+```
+
+Async code is useful for concurrent I/O, such as network requests and database operations, when the libraries support async. It does not automatically speed up CPU-bound work.
 
 ---
 
-## Multi-threading
+## Multithreading
 
 process means "program under execution"
 
@@ -16394,8 +16183,7 @@ with help of the rename, we can able to rename the "Table" in the Database
 4) we can able to rename the existing table  
 5) we can able to remove the any column from the existing table
 
-when we perform alter, truncate, drop, create operation in the database,  
-those operations never be "rollback"
+In MySQL, many DDL statements (including `CREATE`, `ALTER`, `DROP`, and `TRUNCATE`) cause an implicit commit, so they generally cannot be undone with a later `ROLLBACK`. Check the behavior of the specific statement and MySQL version.
 
 with help of the insert command, we can insert one or more rows into  the  
 table
@@ -16409,7 +16197,7 @@ with help of delete command , we can delete the one or more rows from
 the table  
 delete with condition ===\> only specific rows of the table will be deleted based on the condition  
 delete without condition ===\> all rows of the table will be deleted  
-truncate and delete without condition are the same
+`DELETE FROM table_name` removes all rows and can be rolled back in a transaction when supported by the storage engine. `TRUNCATE TABLE` is DDL, usually causes an implicit commit in MySQL, and has different trigger and auto-increment behavior.
 
 insert, delete, update operations can be "rollback" , when we run the  
 these queries in the Transaction mode
@@ -16421,9 +16209,7 @@ we can retrieve all rows from the table
 we can retrieve the rows from the table based on the condition  
 we can retrieve the specific number of rows from the table
 
-with help of savepoint, we can create execute n number of sql queires  
-under one name , with help of this all we can able to commit at once and  
-with help of this all we can able to rollback
+A savepoint marks a position inside the current transaction. You can roll back to that position; commit or roll back the transaction separately.
 
 with help of commit, we can able to save the sql operation permanently on  
 the Database
@@ -16487,37 +16273,15 @@ constraint or check or default is optional
 
 **in MySQL, we will have Data types:**
 
-```python
-for numerical type:
-      integer: int, bigint
-      float type:
-                  for precision:
-                               float
-                               double
-                 for fixed point decimal:
-                            numeric, decimal
-for character type:
-                      char or varchar
-for date  type:
-                             date
-for  both date and time:
-               datetime
-for year:
-```
-
-year  
-for storing one value among the multiple values:  
-Enum  
-for storing the multiple values under one name:  
-set
-
-```python
-for binary information (like image, any other):
-                        blob
-for multi-line text:
-```
-
-text
+| Use | Common MySQL types |
+| --- | --- |
+| Whole numbers | `INT`, `BIGINT` |
+| Approximate numbers | `FLOAT`, `DOUBLE` |
+| Exact decimal values | `DECIMAL` (`NUMERIC` is a synonym) |
+| Text | `CHAR`, `VARCHAR`, `TEXT` |
+| Binary data | `BLOB` |
+| Date and time | `DATE`, `DATETIME`, `TIMESTAMP`, `TIME`, `YEAR` |
+| Enumerated values | `ENUM`, `SET` |
 
 working with constraints:
 
@@ -16545,9 +16309,7 @@ we can this constraint for one or more columns
 
 which is used to  avoid the both null values and duplicates values in the  
 column of the table  
-in a table, only one column can act like "primary key"  
-when we want to make the more than one column act like primary key we  
-can able to define the columns with "both unique and not null" constraint
+Each table can define one primary key, and that key may contain one or more columns. A composite primary key uniquely identifies each row by the combination of its columns.
 
 NULL                        Duplicate  
 not null                             not allow                    allow  
@@ -16660,7 +16422,7 @@ check constraint will never bother about "null or duplicate" values
 create table sample(age int not null  
 check(age\>=0 and age\<=100));
 
-```sql
+```python
 insert into sample values(10);
 insert into sample values(100);
 select * from sample;
@@ -16710,7 +16472,7 @@ when we want to insert the data into table, we will use a "insert" command
 syntax:  
 insert into table\_name(col1,col2,col3,col4,.....coln)
 
-```python
+```sql
 values(val1,val2,val3,val4,.....valn)
 ```
 
@@ -16781,7 +16543,7 @@ clause called "update"
 syntax:  
 update table\_name set col1=value,col2=value,col3=value,............
 
-```python
+```sql
 coln=value where condition;
 ```
 
@@ -16859,7 +16621,7 @@ select * from employee;
 
 update employee set
 
-```python
+```sql
 salary=salary+10000;
 ```
 
@@ -16870,7 +16632,7 @@ update the employee salaries of employees, only who are working in
 update employee set salary=salary+10000  
 where
 
-```python
+```sql
 location='hyderabad';
 ```
 
@@ -16924,7 +16686,7 @@ order by column\_name asc \|desc;
 
 select id,firstname,lastname,salary
 
-```python
+```sql
 from employee
 ```
 
@@ -16939,7 +16701,7 @@ result
 syntax:  
 limit row\_number,number\_of\_rows\_need\_to\_be\_print;
 
-in MySQL, row number always starts with "0"
+In MySQL, `LIMIT offset, row_count` uses a zero-based offset. The offset counts rows to skip; it is not a displayed row number.
 
 example:  
 limit 5; \<=== total limit has to print 5 rows  
@@ -16978,7 +16740,7 @@ limit num1,num2;
 
 query execution order:
 
-```python
+```sql
 from(1) ===>  where (2) ===> order by(3) ===>select (4) ===> limit(5)
 ```
 
@@ -17021,7 +16783,7 @@ select distinct location from employee;
 
 when we give the this clause for multiple columns it will return the data
 
-```python
+```sql
 from the table, unique row wise
 ```
 
@@ -17096,7 +16858,7 @@ aggregate functions
 syntax:  
 select group\_column\_name, count(\*)\|sum() \|avg()\|max()\|min()
 
-```python
+```sql
 from
 ```
 
@@ -17111,7 +16873,7 @@ in the table
 
 select deptid,count(\*) as "employee count"
 
-```python
+```sql
 from employee
 ```
 
@@ -17124,7 +16886,7 @@ multiple columns
 
 select deptid,location,count(\*) as "employee count"
 
-```python
+```sql
 from employee
 ```
 
@@ -17134,7 +16896,7 @@ select count(\*) from employee
 where location='chennai' and deptid=124;  
 select deptid,location,count(\*) as "employee count"
 
-```python
+```sql
 from employee
 ```
 
@@ -17144,7 +16906,7 @@ group by deptid,location order by 2;
 
 select deptid,count(\*)
 
-```python
+```sql
 from employee
 ```
 
@@ -17162,7 +16924,7 @@ give using "having clause"
 
 select deptid,location,count(\*) as emp\_count
 
-```python
+```sql
 from employee
 ```
 
@@ -17171,7 +16933,7 @@ having emp\_count\>=10;
 
 select deptid,location,count(\*) as emp\_count
 
-```python
+```sql
 from employee
 ```
 
@@ -17180,7 +16942,7 @@ having emp\_count\<=10;
 
 select deptid,location,count(\*) as emp\_count
 
-```python
+```sql
 from employee
 ```
 
@@ -17200,7 +16962,7 @@ row as per condition given with having (which are matched)
 when we give the query with clauses called "from, where, group by,  
 having, order by , limit"
 
-```python
+```sql
 from (1) ===> where(2) ==> group by (3) ==> having (4) ===> order by(5) ===> limit (6)
 ```
 
@@ -17208,7 +16970,7 @@ from (1) ===> where(2) ==> group by (3) ==> having (4) ===> order by(5) ===> lim
 
 select deptid,location,count(\*) as emp\_count
 
-```python
+```sql
 from employee
 ```
 
@@ -17502,7 +17264,7 @@ alter table sample124 modify firstname
 varchar(200) not null;  
 alter table sample124 modify lastname
 
-```python
+```sql
 varchar(200) not null,modify midname varchar(50)
 ```
 
@@ -17989,15 +17751,15 @@ when we want to work with null data, in MySQL we will use the
 
 **example:**
 
-```python
-#check the value is null or not
+```sql
+-- Check whether an expression is NULL
 ```
 
 select isnull(null);-- 1 means True  
 select isnull(100); -- 0 means false
 
-```python
-#give the value when the value null, otherwise same as result
+```sql
+-- Return a fallback when the expression is NULL
 #to replace the null values
 select ifnull(null,"true");
 select ifnull(100,"true");
@@ -18192,7 +17954,7 @@ select date_format(curdate(),"%d-%m-%Y");
 
 select date\_format(dob,"%d-%m-%Y")
 
-```python
+```sql
 from employee;
 select date_format(current_timestamp(),"%H");
 select date_format(current_timestamp(),"%i");
@@ -18210,7 +17972,7 @@ over() along with window function
 
 syntax:
 
-```python
+```sql
     window_function_name() over()
 ```
 
@@ -18223,7 +17985,7 @@ id,firstname,lastname,salary,
 first\_value(salary) over(order by  
 salary desc) as "first value"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18232,7 +17994,7 @@ id,firstname,lastname,salary,
 first\_value(salary) over(order by  
 salary) as "first value"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18241,7 +18003,7 @@ id,firstname,lastname,salary,
 abs(salary-(first\_value(salary) over(order by  
 salary desc))) as "difference"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18250,7 +18012,7 @@ id,firstname,lastname,salary,
 abs(salary-(first\_value(salary) over(order by  
 salary desc))) as "difference"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18263,7 +18025,7 @@ salary desc
 rows between unbounded preceding  
 and unbounded following) as "last value"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18272,7 +18034,7 @@ from employee;
 select id ,salary,rank() over(order by  
 salary desc) as "rank"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18281,7 +18043,7 @@ from employee;
 select id ,salary,dense\_rank() over(order by  
 salary desc) as "dense rank"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18296,14 +18058,14 @@ select count(*) from employee;
 select id ,salary,rank() over(order by  
 salary desc) as "rank"
 
-```python
+```sql
 from employee;
 ```
 
 select id ,salary,dense\_rank() over(order by  
 salary desc) as "dense rank"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18316,14 +18078,14 @@ select count(*) from employee;
 select id ,salary,rank() over(order by  
 salary desc) as "rank"
 
-```python
+```sql
 from employee;
 ```
 
 select id ,salary,dense\_rank() over(order by  
 salary desc) as "dense rank"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18333,7 +18095,7 @@ select row\_number()
 over(order by salary desc) as rownum,  
 salary,location
 
-```python
+```sql
 from employee;
 ```
 
@@ -18341,7 +18103,7 @@ select row\_number()
 over(order by salary asc) as rownum,  
 salary,location
 
-```python
+```sql
 from employee;
 ```
 
@@ -18350,21 +18112,21 @@ from employee;
 select id,firstname,lastname,location,  
 ntile(2) over(order by location desc) as "group"
 
-```python
+```sql
 from employee;
 ```
 
 select id,firstname,lastname,location,  
 ntile(3) over(order by location desc) as "group"
 
-```python
+```sql
 from employee;
 ```
 
 select id,firstname,lastname,location,  
 ntile(4) over(order by location desc) as "group"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18373,7 +18135,7 @@ from employee;
 select id,firstname,lastname,location,salary,  
 lead(salary) over(order by salary desc) as "after"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18382,7 +18144,7 @@ from employee;
 select id,firstname,lastname,location,salary,  
 lag(salary) over(order by salary desc) as "before"
 
-```python
+```sql
 from employee;
 ```
 
@@ -18390,14 +18152,14 @@ from employee;
 
 select dense\_rank()
 
-```python
+```sql
 over(partition by location order by salary desc)
 ```
 
 as "dense rank",  
 salary,location
 
-```python
+```sql
 from employee;
 ```
 
@@ -18405,7 +18167,7 @@ select rank()
 over(partition by location order by salary desc) as "rank",  
 salary,location
 
-```python
+```sql
 from employee;
 ```
 
@@ -18413,7 +18175,7 @@ from employee;
 
 ## CTEs and Joins
 
-**working with Joins:**
+This heading is currently an outline and does not yet include CTE or join examples.
 
 ---
 
@@ -18423,7 +18185,7 @@ in SQL also we can able to create the "variables"
 when we want to create the variables inside the MySQL, we will use  
 the following syntax:  
 set @variable\_name:=value  
-the above variable is also called as "session variable"
+The `@name` form creates a user-defined session variable, which is available for the current connection.
 
 **example:**
 
@@ -18439,7 +18201,7 @@ select min(salary) into @minimum from employee;
 select @minimum;
 ```
 
-**in MySQL, we will have three types of variables:**
+**Common MySQL variable categories:**
 
 1) session variable  
 to create the session variable , we will always use "set" keyword  
@@ -18447,39 +18209,25 @@ the session variable name always starts with "@"
 2) local variable  
 these variable will define inside the function or stored procedure  
 to create the local variable, we will use a keyword called "declare"  
-3) system variable  
-to define the any system variable, we will use before the name  
-the system variable name always starts with "@@"  
-this we can define using "set" keyword
+3) System variables are provided by MySQL and are read with names such as `@@session.time_zone` or `@@global.max_connections`. They are not user-created variables; some can be changed with `SET` when the account has the required privilege.
 
 ---
 
 ## Stored Procedures, Functions and Triggers
 
-**working with triggers:**
+This heading is currently an outline and does not yet include procedure, function, or trigger examples.
 
 ---
 
 ## Indexes
 
-indexes are  act as "look up" table for  "columns"  
-indexes are used to "faster retrieval of data from the columns" while using  
-select operation  
-indexes will give the high performance for "data retrieval operations" ,  
-indexes will give the very poor performance while doing the "insert or  
-delete or update operations"
+Indexes are data structures that can help MySQL find rows without scanning an entire table. They can speed up some reads, but use storage and may add work to inserts, updates, and deletes. The benefit depends on the query and index design.
 
 **in MySQL, we will have two types of indexes:**
 
-**1) clustered index**
+**InnoDB index organization**
 
-clustered index is a index , which will make the any one of the column of the table as index of the column , it will never create separate column for index, generally primary key column of the table always act as "clustered  
-index"
-
-**2) non-clustered index:**
-
-non-clustered index is a index , which will create the separate column for index column to maintain the index information, it will never use existing  
-table column , except primary key index, all are non-clustered indexes
+InnoDB stores table rows in the clustered index, usually using the primary key. If a table has no primary key, InnoDB selects a suitable unique, non-null index or creates a hidden row ID. Secondary indexes store their indexed columns and the primary-key value used to locate the row; they do not add a new column to the table.
 
 **when we are creating the indexes in MySQL, we will have the following types:**
 
@@ -18610,13 +18358,13 @@ select * from account;
 rollback;
 ```
 
-when we want to perform rollback for  multiple sql operations at a time while executing sql operation as transaction, we will use the a concept called save point , following syntax:  
-save point savepoint\_name;
+when we want to perform rollback for  multiple sql operations at a time while executing sql operation as transaction, we will use the a concept called savepoint. Use this statement to create one:
+`SAVEPOINT savepoint_name;`
 
 **when we want to roll back the save point, we will use the following syntax:**
 
 ```sql
-                   rollback to savepoint_name;
+ROLLBACK TO SAVEPOINT savepoint_name;
 ```
 
 **example:**
@@ -18647,3 +18395,5 @@ rollback;
 ---
 
 ## AI/ML
+
+Artificial intelligence (AI) is the broad field of building systems that perform tasks associated with human intelligence. Machine learning (ML) is a part of AI in which models learn patterns from data. This repository currently contains no AI/ML examples or Flask or MongoDB lessons beyond the brief overview above.

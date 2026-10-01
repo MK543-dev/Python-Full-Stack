@@ -15136,7 +15136,8 @@ in python, every program is itself a thread called  "main thread"
 
 when we are working with multi-threading, we will use the following  
 ways:  
-\=========================================================1)  create the thread as function using threading module  
+=========================================================
+1)  create the thread as function using threading module  
 2)  create the thread as method by extending "Thread" class from  
 threading module  
 3) create the thread as method without extending the "Thread" class and using thread module

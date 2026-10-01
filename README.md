@@ -398,6 +398,14 @@ the intermediate code file extension is ".pyc"
 
 Python code can run on different platforms when a compatible Python implementation and required dependencies are available.
 
+```mermaid
+flowchart LR
+    A[Python source file] --> B[Python implementation]
+    B --> C[Bytecode in CPython]
+    C --> D[Python virtual machine executes instructions]
+    D --> E[Program output]
+```
+
 **python is a open source:**
 
 when we say any software or system is open source, then the it's
@@ -654,6 +662,16 @@ in python, we will use a function  called "type()"
 7)  binary type
 
 8)  None type
+
+```mermaid
+flowchart TD
+    T[Python values] --> N[Numbers: int, float, complex]
+    T --> S[Text: str]
+    T --> Q[Sequences: list, tuple, range]
+    T --> C[Collections: set, frozenset, dict]
+    T --> B[Binary: bytes, bytearray, memoryview]
+    T --> Z[None]
+```
 
 the above all are also called as "python built-in data types", built-in data
 
@@ -2573,6 +2591,15 @@ can able to write the any number of "statements"
 
 5) nested conditional statement
 
+```mermaid
+flowchart TD
+    A[Evaluate condition] --> B{True?}
+    B -- Yes --> C[Run if block]
+    B -- No --> D[Run else block, if present]
+    C --> E[Continue after the conditional]
+    D --> E
+```
+
 **simple if statement:**
 
 when we want to execute the  "any logic" based on the condition,
@@ -2880,6 +2907,15 @@ condition (either True or False)
 looping statement  can execute the logic for "n" number of times
 
 based on the condition
+
+```mermaid
+flowchart TD
+    A[Start] --> B{Condition true?}
+    B -- Yes --> C[Run loop body]
+    C --> D[Advance loop]
+    D --> B
+    B -- No --> E[Continue after loop]
+```
 
 when we want to create the loop based on the "Condition", in python
 
@@ -5277,6 +5313,13 @@ print("the value of a is:{r2} and b is:{r1}".format(r1=a,r2=b))
 
 ## Data Structures
 
+```mermaid
+flowchart LR
+    S["String: cat (immutable)"] -->|iterate through| C["Characters: c, a, t"]
+    C -->|build a list| L["List: c, a, t (mutable)"]
+    L -->|change first element| M["List: b, a, t"]
+```
+
 **in python, we will have the following data structures:**
 
 1)  list
@@ -5296,6 +5339,15 @@ print("the value of a is:{r2} and b is:{r1}".format(r1=a,r2=b))
 ---
 
 ## Indexing and Slicing
+
+For the list `['a', 'b', 'c', 'd']`, positive indexes start at `0`, negative indexes count from the end, and a slice includes its start but excludes its stop:
+
+```text
+items:        ['a', 'b', 'c', 'd']
+positive:       0    1    2    3
+negative:      -4   -3   -2   -1
+slice [1:3] -> ['b', 'c']
+```
 
 **in python, we can apply indexing and slicing on the following:**
 
@@ -6052,6 +6104,52 @@ else:
 ---
 
 ## Searching and Sorting
+
+### Example: Search and sort a list
+
+This complete example sorts a copy of a list, then searches it. Binary search requires sorted input.
+
+```python
+def linear_search(values, target):
+    for index, value in enumerate(values):
+        if value == target:
+            return index
+    return None
+
+
+def bubble_sort(values):
+    result = values.copy()
+    for end in range(len(result) - 1, 0, -1):
+        swapped = False
+        for index in range(end):
+            if result[index] > result[index + 1]:
+                result[index], result[index + 1] = result[index + 1], result[index]
+                swapped = True
+        if not swapped:
+            break
+    return result
+
+
+def binary_search(sorted_values, target):
+    low, high = 0, len(sorted_values) - 1
+    while low <= high:
+        middle = (low + high) // 2
+        if sorted_values[middle] == target:
+            return middle
+        if sorted_values[middle] < target:
+            low = middle + 1
+        else:
+            high = middle - 1
+    return None
+
+
+numbers = [7, 2, 9, 4, 1]
+ordered = bubble_sort(numbers)
+print(ordered)                         # [1, 2, 4, 7, 9]
+print(linear_search(numbers, 9))       # 2
+print(binary_search(ordered, 4))       # 2
+print(binary_search(ordered, 5))       # None
+```
 
 **Linear search:**
 
@@ -7943,6 +8041,13 @@ print(d1)
 
 ## Python Functions
 
+```mermaid
+flowchart LR
+    A[Call function with arguments] --> B[Run function body]
+    B --> C[Return result]
+    C --> D[Use result in caller]
+```
+
 function is a "collection or a block of statements", which is used to perform  a specified task  in the program
 
 in python functions are used to avoid the "code duplication", it means  
@@ -8624,6 +8729,31 @@ by itself
 call by itself is called "recursion"  
 recursion making the function can call by itself
 
+```mermaid
+flowchart TD
+    A[Call recursive function] --> B{Base case reached?}
+    B -- No --> C[Call function with smaller input]
+    C --> A
+    B -- Yes --> D[Return a result]
+    D --> E[Unwind earlier calls]
+```
+
+### Example
+
+This factorial example has a base case (`0` and `1`) and a recursive case that reduces the input. Negative values are rejected.
+
+```python
+def factorial(number):
+    if number < 0:
+        raise ValueError("number must be non-negative")
+    if number in (0, 1):
+        return 1
+    return number * factorial(number - 1)
+
+
+print(factorial(5))  # 120
+```
+
 in python, we can implement the recursive function using "Def" keyword  
 when we are working with recursive functions, we always need specify  
 the valid condition, otherwise it will reaches maximum depth , where  
@@ -9077,6 +9207,13 @@ display(10,20)
 
 ## Decorators
 
+```mermaid
+flowchart LR
+    A[Original function] --> B[Decorator]
+    B --> C[Wrapper adds behavior]
+    C --> D[Replacement callable]
+```
+
 decorator is a higher order function , which takes another function as  
 argument and which function it takes as argument, it will enhances and  
 return enhanced function as a result, original function code always  
@@ -9251,6 +9388,14 @@ get_salary()
 ---
 
 ## Iterators and Generators
+
+```mermaid
+flowchart LR
+    A[Iterable] --> B[Iterator]
+    B -->|next()| C[Yield one item]
+    C --> D[Continue from saved position]
+    D --> B
+```
 
 **iterator:**
 
@@ -10662,6 +10807,14 @@ print(globals())
 
 ## Modules and Packages
 
+```mermaid
+flowchart TD
+    A[Application] --> B[Module: one .py file]
+    A --> C[Package: related modules]
+    C --> D[Module A]
+    C --> E[Module B]
+```
+
 **Module:**
 
 Module means "python file"  
@@ -10952,6 +11105,14 @@ def display2():
 
 ## Object-Oriented Programming: Classes and Objects
 
+```mermaid
+flowchart LR
+    C[Class: attributes and methods] -->|creates| A[Object 1]
+    C -->|creates| B[Object 2]
+    A --> D[Object-specific state]
+    B --> E[Object-specific state]
+```
+
 **classes and objects:**
 
 **class:**
@@ -11181,6 +11342,14 @@ instance method
 ---
 
 ## Constructors
+
+```mermaid
+flowchart LR
+    A[Call class] --> B[Create object]
+    B --> C[Run __init__]
+    C --> D[Initialize instance data]
+    D --> E[Return ready object]
+```
 
 constructor is a method  
 constructor is a "instance method"  
@@ -12014,6 +12183,13 @@ the classes what are given by Python are called as "built-in classes"
 
 ## Inheritance
 
+```mermaid
+classDiagram
+    BaseClass <|-- ChildClass
+    BaseClass : shared attributes and methods
+    ChildClass : adds or overrides behavior
+```
+
 inheritance make the class can able to take the properties (members) from the another class  
 the class which will give the members to another class , then class is called "Super class or Base class"  
 the class which will take the members from the another class", then the  
@@ -12482,6 +12658,13 @@ visiting, it will throw the "Type Error"
 
 ## Data Abstraction
 
+```mermaid
+flowchart LR
+    U[Caller] --> P[Public method]
+    P --> I[Hidden implementation details]
+    I --> R[Result]
+```
+
 Abstraction refers "hiding the member of the class"  
 when we give any class as super class to another class, then class will get  
 all members of the super class, now we want to make the subclass can  
@@ -12654,6 +12837,14 @@ s2.display()
 
 ## Data Encapsulation
 
+```mermaid
+flowchart LR
+    C[Caller] -->|validated operation| O[Object]
+    O --> D[Internal state]
+    D --> O
+    O --> C
+```
+
 Encapsulation means "allow the programmer or developer can able to  
 define the data and methods at one place, there is it class"
 
@@ -12672,6 +12863,16 @@ fully-encapsulated  class means  "when the class have all data as  private, then
 ---
 
 ## Abstract Classes
+
+```mermaid
+classDiagram
+    class Shape {
+        <<abstract>>
+        area()
+    }
+    Shape <|-- Circle
+    Shape <|-- Rectangle
+```
 
 Abstract class is a class, when we say any class is Abstract class in Python,
 
@@ -12861,6 +13062,14 @@ s2.display3()
 ---
 
 ## Polymorphism
+
+```mermaid
+flowchart LR
+    A[Common operation] --> B[Object of type A]
+    A --> C[Object of type B]
+    B --> D[Behavior A]
+    C --> E[Behavior B]
+```
 
 Polymorphism means "Many Forms"  
 using this  we can able to make the same "method or operator or function" can act differently based on the given object or data
@@ -13385,6 +13594,15 @@ print(s1.a1,s1.b1)
 
 ## Singleton Class
 
+```mermaid
+flowchart TD
+    A[Request instance] --> B{Instance already exists?}
+    B -- No --> C[Create and save instance]
+    B -- Yes --> D[Reuse saved instance]
+    C --> E[Return same instance]
+    D --> E
+```
+
 singleton class  is a "design pattern"  of the OOPS  
 single class can able to  have only one instance or object always , it will  
 never make the class can have "multiple" objects , it may have multiple different references (names), but all are reside at same memory location
@@ -13456,6 +13674,13 @@ the class
 ---
 
 ## Metaclasses
+
+```mermaid
+flowchart LR
+    A[Class definition] --> B[Metaclass]
+    B --> C[Class object]
+    C --> D[Instances of that class]
+```
 
 Meta class is a class , which is used to create the another class  
 using meta classes , we can able to give the default behaviour and data  
@@ -14176,6 +14401,15 @@ print(a,b)
 
 ## Exception Handling
 
+```mermaid
+flowchart TD
+    A[Run try block] --> B{Exception raised?}
+    B -- Yes --> C[Matching except block]
+    B -- No --> D[Optional else block]
+    C --> E[finally block]
+    D --> E
+```
+
 Exception means "run-time error"  
 Exception is not a "syntax error"  
 when we have Exceptions in the code, the complete code or program will  
@@ -14789,6 +15023,14 @@ print(a1.balance())
 
 ## Asynchronous Functions
 
+```mermaid
+flowchart LR
+    A[Event loop] --> B[Coroutine A awaits I/O]
+    A --> C[Coroutine B awaits I/O]
+    B --> D[Resume when ready]
+    C --> E[Resume when ready]
+```
+
 **in python, we will have two types of functions:**
 
 **1) synchronous functions :**
@@ -15066,6 +15308,38 @@ Async code is useful for concurrent I/O, such as network requests and database o
 ---
 
 ## Multithreading
+
+```mermaid
+flowchart TD
+    P[Process] --> A[Thread A]
+    P --> B[Thread B]
+    P --> M[Shared process memory]
+    A --> M
+    B --> M
+```
+
+### Example
+
+```python
+from threading import Thread
+
+
+def show_numbers(label):
+    for number in range(1, 4):
+        print(label, number)
+
+
+threads = [
+    Thread(target=show_numbers, args=("A",)),
+    Thread(target=show_numbers, args=("B",)),
+]
+for thread in threads:
+    thread.start()
+for thread in threads:
+    thread.join()
+```
+
+The output from the two threads may interleave in either order.
 
 process means "program under execution"
 
@@ -16110,6 +16384,20 @@ print(x)
 
 ## Relational Databases
 
+```mermaid
+erDiagram
+    DEPARTMENT ||--o{ EMPLOYEE : has
+    DEPARTMENT {
+        int department_id PK
+        string name
+    }
+    EMPLOYEE {
+        int employee_id PK
+        int department_id FK
+        string name
+    }
+```
+
 Database is used to work with "store the all application users data"  
 based on the how we can store the data inside the database, the databases are classified into two types:
 
@@ -16259,6 +16547,14 @@ select * from employee;
 ---
 
 ## Tables and Constraints
+
+```mermaid
+flowchart LR
+    PK[Primary key: unique and not NULL] --> R[Identifies each row]
+    FK[Foreign key] -->|references| PK
+    NN[NOT NULL] --> V[Requires a value]
+    UQ[UNIQUE] --> U[Prevents duplicate non-NULL values]
+```
 
 syntax:  
 create table table\_name(col1 type constraint check default,  
@@ -16556,6 +16852,16 @@ delete from table_name where condition;
 
 ## SQL Clauses
 
+```mermaid
+flowchart LR
+    A[FROM] --> B[WHERE]
+    B --> C[GROUP BY]
+    C --> D[HAVING]
+    D --> E[SELECT]
+    E --> F[ORDER BY]
+    F --> G[LIMIT]
+```
+
 **in MySQL we will have the following clauses:**
 
 **1.where:**
@@ -16797,6 +17103,28 @@ order by salary desc;
 ---
 
 ## Aggregate Functions, Group By and Having
+
+```mermaid
+flowchart LR
+    A[Rows] --> B[WHERE filters rows]
+    B --> C[GROUP BY forms groups]
+    C --> D[Aggregate each group]
+    D --> E[HAVING filters groups]
+    E --> F[Result rows]
+```
+
+### Example
+
+This query filters rows first, groups the remaining employees by department, then keeps only groups with at least two employees:
+
+```sql
+SELECT deptid, COUNT(*) AS employee_count
+FROM employee
+WHERE salary >= 50000
+GROUP BY deptid
+HAVING COUNT(*) >= 2
+ORDER BY deptid;
+```
 
 1.count()  
 this function will give the number of rows in the column or  
@@ -17964,6 +18292,41 @@ select date_format(current_timestamp(),"%H:%i:%s %p");
 
 ## Window Functions
 
+```mermaid
+flowchart LR
+    A[Input rows] --> B[Optional PARTITION BY]
+    B --> C[ORDER BY within each partition]
+    C --> D[Calculate window value]
+    D --> E[Return each original row with its value]
+```
+
+### Example
+
+This query ranks employees within each department and shows the previous salary in that department. Unlike `GROUP BY`, window functions keep one result row per employee.
+
+```sql
+WITH employee AS (
+    SELECT 'Asha' AS employee_name, 'Sales' AS department, 70000 AS salary
+    UNION ALL SELECT 'Ben', 'Sales', 70000
+    UNION ALL SELECT 'Chen', 'Sales', 50000
+    UNION ALL SELECT 'Devi', 'Support', 60000
+)
+SELECT
+    employee_name,
+    department,
+    salary,
+    RANK() OVER (
+        PARTITION BY department
+        ORDER BY salary DESC
+    ) AS department_rank,
+    LAG(salary) OVER (
+        PARTITION BY department
+        ORDER BY salary DESC, employee_name
+    ) AS previous_salary
+FROM employee
+ORDER BY department, salary DESC, employee_name;
+```
+
 when we are working with window function , we will use a function called  
 over() along with window function
 
@@ -18172,7 +18535,40 @@ from employee;
 
 ## CTEs and Joins
 
-This heading is currently an outline and does not yet include CTE or join examples.
+```mermaid
+flowchart LR
+    A[CTE: named query result] --> B[Main SELECT]
+    B --> C[JOIN related rows using a key]
+    C --> D[Combined result]
+```
+
+A common table expression (CTE) names a query result for use by the statement that follows it. A join combines related rows from tables using a matching condition.
+
+### Example
+
+This MySQL 8.0+ example uses CTEs as small in-memory tables, then uses a `LEFT JOIN` so an employee without a matching department still appears:
+
+```sql
+WITH departments AS (
+    SELECT 1 AS department_id, 'Sales' AS department_name
+    UNION ALL
+    SELECT 2, 'Support'
+),
+employees AS (
+    SELECT 101 AS employee_id, 'Asha' AS employee_name, 1 AS department_id
+    UNION ALL
+    SELECT 102, 'Ben', 2
+    UNION ALL
+    SELECT 103, 'Chen', 3
+)
+SELECT e.employee_id, e.employee_name, d.department_name
+FROM employees AS e
+LEFT JOIN departments AS d
+    ON e.department_id = d.department_id
+ORDER BY e.employee_id;
+```
+
+`Chen` remains in the result with `NULL` for `department_name` because no department row matches. Use `INNER JOIN` when only matching rows should be returned.
 
 ---
 
@@ -18316,6 +18712,34 @@ drop index i4 on employee;
 ---
 
 ## Transactions
+
+```mermaid
+flowchart LR
+    A[START TRANSACTION] --> B[Run changes]
+    B --> C{Keep changes?}
+    C -- Yes --> D[COMMIT]
+    C -- No --> E[ROLLBACK]
+```
+
+### Example
+
+Assuming the existing `account` table has `id` and `account` columns, this transfers 5,000 between two rows. Choose `COMMIT` to keep the updates or `ROLLBACK` to undo them.
+
+```sql
+START TRANSACTION;
+UPDATE account
+SET account = account - 5000
+WHERE id = 1;
+UPDATE account
+SET account = account + 5000
+WHERE id = 2;
+SELECT id, account
+FROM account
+WHERE id IN (1, 2);
+-- Choose one of these:
+-- COMMIT;
+-- ROLLBACK;
+```
 
 in MySQL, we can able to execute the "SQL operations" as transaction mode  
 when we want to execute the any sql operation as transaction mode, we  

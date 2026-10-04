@@ -2,23 +2,88 @@
 
 ## Table of Contents
 
-1. [Python full-stack overview](#python-full-stack-overview)
-2. [Types of applications](#types-of-applications)
-3. [Python fundamentals](#introduction-to-python)
-4. [Python data types](#python-data-types)
-5. [Input, output, variables, and operators](#input-and-output-statements)
-6. [Control flow](#conditional-statements)
-7. [Practice programs --> Codes](#practice-programs-on-operators)
-8. [Python data structures](#data-structures)
-9. [Searching and sorting](#searching-and-sorting)
-10. [Functions and functional tools](#python-functions)
-11. [Object-oriented programming](#object-oriented-programming-classes-and-objects)
-12. [Exceptions and concurrency](#exception-handling)
-13. [Relational databases and SQL](#relational-databases)
-14. [Working with MySQL](#working-with-mysql)
-15. [MySQL with Python --> Codes](#mysql-with-python)
-16. [Advanced SQL](#programming-with-sql)
-17. [AI/ML](#aiml)
+[Python Full Stack with AI/ML Notes](#python-full-stack-with-aiml-notes)<br>
+│<br>
+├── [Python Full Stack Overview](#python-full-stack-overview)<br>
+├── [Types of Applications](#types-of-applications)<br>
+├── [Introduction to Python](#introduction-to-python)<br>
+├── [Setting Up Python](#setting-up-python)<br>
+├── [Python Character Set](#python-character-set)<br>
+├── [Python Keywords](#python-keywords)<br>
+├── [Python Comments](#python-comments)<br>
+├── [Python Identifiers](#python-identifiers)<br>
+├── [Python Data Types](#python-data-types)<br>
+├── [Input and Output Statements](#input-and-output-statements)<br>
+├── [Python Variables](#python-variables)<br>
+├── [Python Operators](#python-operators)<br>
+├── [Practice Programs on Operators](#practice-programs-on-operators)<br>
+├── [Overloaded Operators](#overloaded-operators)<br>
+├── [Conditional Statements](#conditional-statements)<br>
+├── [Looping Statements](#looping-statements)<br>
+├── [Programs on Strings and Lists (Without Built-in Functions)](#programs-on-strings-and-lists-without-built-in-functions)<br>
+├── [Programs on Numbers](#programs-on-numbers)<br>
+├── [Programs on Patterns](#programs-on-patterns)<br>
+├── [Unconditional Statements](#unconditional-statements)<br>
+├── [String Formatting](#string-formatting)<br>
+├── [Data Structures](#data-structures)<br>
+├── [Indexing and Slicing](#indexing-and-slicing)<br>
+├── [Programs on Lists and Strings](#programs-on-lists-and-strings)<br>
+├── [Searching and Sorting](#searching-and-sorting)<br>
+│   └── [Example: Search and sort a list](#example-search-and-sort-a-list)<br>
+├── [Comprehensions](#comprehensions)<br>
+├── [Working with Lists](#working-with-lists)<br>
+├── [Working with Tuples](#working-with-tuples)<br>
+├── [Working with Strings](#working-with-strings)<br>
+├── [Working with Sets](#working-with-sets)<br>
+├── [Working with Dictionaries](#working-with-dictionaries)<br>
+├── [Python Functions](#python-functions)<br>
+├── [Recursion](#recursion)<br>
+│   └── [Example](#example)<br>
+├── [Monkey Patching](#monkey-patching)<br>
+├── [Decorators](#decorators)<br>
+├── [Iterators and Generators](#iterators-and-generators)<br>
+├── [Annotations and Doc Strings](#annotations-and-doc-strings)<br>
+├── [Packing and Unpacking](#packing-and-unpacking)<br>
+├── [Python Built-in Functions](#python-built-in-functions)<br>
+├── [Scope](#scope)<br>
+├── [Modules and Packages](#modules-and-packages)<br>
+├── [Object-Oriented Programming: Classes and Objects](#object-oriented-programming-classes-and-objects)<br>
+├── [Constructors](#constructors)<br>
+├── [Built-in Classes](#built-in-classes)<br>
+├── [Inheritance](#inheritance)<br>
+├── [Data Abstraction](#data-abstraction)<br>
+├── [Data Encapsulation](#data-encapsulation)<br>
+├── [Abstract Classes](#abstract-classes)<br>
+├── [Polymorphism](#polymorphism)<br>
+├── [Singleton Class](#singleton-class)<br>
+├── [Metaclasses](#metaclasses)<br>
+├── [Data Classes](#data-classes)<br>
+├── [Object-Oriented Relationships](#object-oriented-relationships)<br>
+├── [Exception Handling](#exception-handling)<br>
+├── [Asynchronous Functions](#asynchronous-functions)<br>
+├── [Multithreading](#multithreading)<br>
+│   └── [Example](#example-1)<br>
+├── [Relational Databases](#relational-databases)<br>
+├── [Working with MySQL](#working-with-mysql)<br>
+├── [Tables and Constraints](#tables-and-constraints)<br>
+├── [SQL Clauses](#sql-clauses)<br>
+├── [Aggregate Functions, Group By and Having](#aggregate-functions-group-by-and-having)<br>
+│   └── [Example](#example-2)<br>
+├── [MySQL Operators (Logical, IN, BETWEEN, LIKE)](#mysql-operators-logical-in-between-like)<br>
+├── [Alter Command](#alter-command)<br>
+├── [MySQL with Python](#mysql-with-python)<br>
+├── [Null Values and Case Statement](#null-values-and-case-statement)<br>
+├── [MySQL Built-in Functions](#mysql-built-in-functions)<br>
+├── [Window Functions](#window-functions)<br>
+│   └── [Example](#example-3)<br>
+├── [CTEs and Joins](#ctes-and-joins)<br>
+│   └── [Example](#example-4)<br>
+├── [Programming with SQL](#programming-with-sql)<br>
+├── [Stored Procedures, Functions and Triggers](#stored-procedures-functions-and-triggers)<br>
+├── [Indexes](#indexes)<br>
+└── [Transactions](#transactions)<br>
+    └── [Example](#example-5)<br>
+
 
 
 ---
